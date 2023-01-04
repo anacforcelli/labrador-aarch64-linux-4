@@ -1,0 +1,11 @@
+#
+# LoRa Transceiver configuration
+#
+
+menuconfig SX127X
+	bool "SX127X transceiver support"
+	---help---
+	  Say Y here if you have a SX127X LoRa transceiver.
+
+	  To compile this driver as a module, choose M here: the module will
+	  be called gnss.
