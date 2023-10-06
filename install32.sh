@@ -40,7 +40,7 @@ if [ -d "$LIBDIR" ]; then
 	sudo rm -rf $LIBDIR/modules
 fi
 
-sudo cp output/uImage $BOOTDIR
-sudo cp output/*.dtb $BOOTDIR
-sudo cp -r output/lib/modules $LIBDIR
+sudo cp output32/uImage $BOOTDIR
+sudo cp output32/*.dtb $BOOTDIR
+sudo cp -r output32/lib/modules $LIBDIR
 sync
