@@ -22,6 +22,7 @@ fi
 if [ -d "$BOOTDIR" ]; then
 	sudo rm -f $BOOTDIR/*.dtb
 	sudo rm -f $BOOTDIR/Image
+	sudo rm -f $BOOTDIR/config.json
 else
 	sudo mkdir $BOOTDIR
 fi
@@ -32,5 +33,6 @@ fi
 
 sudo cp output/Image $BOOTDIR
 sudo cp output/*.dtb $BOOTDIR
+sudo cp config.json $BOOTDIR
 sudo cp -r output/lib/modules $LIBDIR
 sync
